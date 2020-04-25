@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicted Class</title>
+</head>
+<body>
+    <div class="predict">
+
+        <h1>Iris Classification</h1>
+        <form method="POST" action="{{ url_for('returntohome')}}">
+             {{ prediction_text }}
+             <img src="{{ user_image }}"  style="width:300px;height:300px;">
+             <button type="submit" class="btn btn-primary btn-block btn-large">Check another</button>
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
